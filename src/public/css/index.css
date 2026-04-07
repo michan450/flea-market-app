@@ -1,0 +1,131 @@
+.header {
+  background: #000;
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;    
+  justify-content: space-between; 
+  gap: 20px;             
+  height: 70px;           
+  padding: 0 20px;
+}
+
+.header__logo {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 24px;
+}
+.search-wrapper {
+    flex: 2;                
+    display: flex;
+    justify-content: center; 
+    max-width: none;
+}
+.search-wrapper form {
+  width: 100%;
+  max-width: 500px;
+}
+.search-input {
+    width: 100%;             
+    max-width: 500px;
+    padding: 8px 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.header__nav {
+  display: flex;
+  gap: 15px; 
+  white-space: nowrap;
+  align-items: center;
+}
+.logout-form {
+    margin: 0;
+}
+.header-link,
+.logout-btn {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: #fff;
+}
+.logout-btn,
+.logout-btn:hover,
+.logout-btn:focus,
+.logout-btn:active {
+    background: none;
+    border: none;
+    color: #fff;          
+    font-size: 16px;
+    padding: 0;
+    cursor: pointer;
+}
+.logout-btn:focus {
+    outline: none;
+}
+.btn-outlined {
+  background-color: #fff;      
+  color: #000;                 
+  border: 2px solid #000;      
+  padding: 6px 14px;           
+  border-radius: 4px;          
+  font-weight: bold;
+  text-decoration: none;       
+  transition: background-color 0.2s, color 0.2s;
+}
+.mylist{
+  display: flex;
+  gap: 100px; 
+  padding-left: 200px;   
+  padding-top: 0px; 
+  padding-bottom: 0px;       
+  border-bottom: 3px solid #302b2b;
+}
+.mylist a{
+  text-decoration: none;
+}
+.moji_1,
+.moji_2{
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  
+}
+.moji_2{
+  color: crimson;
+}
+.items-container {
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1200px;   
+    margin: 40px auto;      
+}
+.item-card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.item-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    aspect-ratio: 4 / 3;
+}
+
+@media screen and (max-width: 850px) {
+  .items-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding: 0 20px;
+  }
+}
+.sold{
+  color:rgb(244, 24, 24);
+}

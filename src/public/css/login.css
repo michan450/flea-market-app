@@ -1,0 +1,82 @@
+.header {
+  background: #000;
+}
+
+.header__inner {
+  margin: 0 auto;
+  padding: 20px 15px;
+  max-width: 1230px;
+}
+
+.header__logo {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 24px;
+}
+.login {
+  width: 600px;
+  margin: 80px  auto;
+}
+.label {
+  display: block;
+  margin-top: 15px;
+  font-size: 20px;
+}
+
+.text {
+  width: 100%;
+  height: 40px;
+  font-size: 16px;
+}
+.title{
+    text-align: center;
+}
+.error{
+  color: red;
+  margin-top:3px;
+}
+.login-btn{
+  width: 100%;
+  background: rgb(234, 85, 85);
+  color: white;
+  border: none;
+  padding: 10px;
+  margin-top: 40px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.register-link{
+  text-align: center;
+  margin-top: 15px;
+}
+.register-link a{
+  color:#3a8fea;
+  text-decoration:none;
+}
+@media (min-width: 1400px) and (max-width: 1540px) {
+  .login {
+    width: 650px; /* 少し横幅を広げる */
+    margin: 100px auto; /* 上下マージン調整 */
+  }
+}
+@media (min-width: 768px) and (max-width: 850px) {
+  .login {
+    width: 90%; 
+    margin: 60px auto; 
+  }
+
+  .label {
+    font-size: 18px; 
+
+  .text {
+    height: 35px; 
+    font-size: 15px;
+  }
+
+  .login-btn {
+    padding: 8px; 
+    font-size: 15px;
+  }
+}
+}

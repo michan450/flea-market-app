@@ -1,0 +1,224 @@
+.header {
+  background: #000;
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;    
+  justify-content: space-between; 
+  gap: 20px;             
+  height: 70px;           
+  padding: 0 20px;
+}
+
+.header__logo {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 24px;
+}
+.search-wrapper {
+    flex: 2;                
+    display: flex;
+    justify-content: center; 
+    max-width: none;
+}
+.search-wrapper form {
+  width: 100%;
+  max-width: 800px;
+}
+.search-input {
+    width: 100%;             
+    max-width: 400px;
+    padding: 8px 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.header__nav {
+    display: flex;
+    gap: 15px;
+    white-space: nowrap;
+    align-items: center;
+}
+.logout-form {
+    margin: 0;
+}
+.header-link,
+.logout-btn {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: #fff;
+}
+.logout-btn,
+.logout-btn:hover,
+.logout-btn:focus,
+.logout-btn:active {
+    background: none;
+    border: none;
+    color: #fff;          
+    font-size: 16px;
+    padding: 0;
+    cursor: pointer;
+}
+.logout-btn:focus {
+    outline: none;
+}
+.btn-outlined {
+  background-color: #fff;      
+  color: #000;                 
+  border: 2px solid #000;      
+  padding: 6px 14px;           
+  border-radius: 4px;          
+  font-weight: bold;
+  text-decoration: none;       
+  transition: background-color 0.2s, color 0.2s;
+}
+.mypage-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+.profile-header {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+.profile-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* 共通サイズ */
+.profile-image,
+.profile-placeholder {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+/* 画像 */
+.profile-image {
+  object-fit: cover;
+}
+
+/* 未設定（グレー丸） */
+.profile-placeholder {
+  background-color: #ccc;
+}
+
+.user-name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+.edit-btn {
+  padding: 8px 16px;
+  border: 1px solid red;
+  color: red;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.moji_1,
+.moji_2 {
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+
+.item-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.item-card {
+  width: 150px;
+}
+
+.item-card img {
+  width: 100%;
+  border-radius: 5px;
+}
+.tab-menu {
+  display: flex;
+  gap: 40px;
+  border-bottom: 2px solid #ccc;
+  border-bottom: 2px solid #ccc;
+  margin-bottom: 20px;
+  width: 100vw;
+  margin-left: calc(50% - 50vw); 
+  padding-left: 250px;
+}
+
+.tab {
+  padding: 10px 0;
+  cursor: pointer;
+  font-weight: bold;
+  color: #666;
+}
+
+.tab.active {
+  color: red;
+}
+
+@media (min-width: 1400px) and (max-width: 1540px) {
+  .profile {
+    width: 650px; 
+    margin: 100px auto; 
+  }
+}
+@media (min-width: 768px) and (max-width: 850px) {
+  .profile {
+    width: 90%; 
+    margin: 60px auto; 
+    padding: 20px;
+  }
+
+  .label {
+    font-size: 18px; 
+  }
+
+  .text {
+    height: 35px; 
+    font-size: 15px;
+  }
+
+  .create-btn {
+    padding: 8px; 
+    font-size: 15px;
+  }
+  @media (max-width: 850px) {
+  .header__inner {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 10px;
+  }
+
+  .search-wrapper {
+    width: 100%;
+    order: 3; 
+  }
+
+  .search-input {
+    width: 100%;
+  }
+
+  .header__nav {
+    width: 100%;
+    justify-content: flex-end;
+  }
+}
+}
+

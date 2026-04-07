@@ -1,0 +1,97 @@
+.header {
+  background: #000;
+}
+
+.header__inner {
+  margin: 0 auto;
+  padding: 20px 15px;
+  max-width: 1230px;
+}
+
+.header__logo {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 24px;
+}
+.register {
+  width: 600px;
+  margin: 80px  auto;
+}
+.label {
+  display: block;
+  margin-top: 15px;
+  font-size: 20px;
+}
+.text {
+  width: 100%;
+  height: 40px;
+  font-size: 16px;
+}
+.title{
+    text-align: center;
+}
+.error{
+  color: red;
+  margin-top:3px;
+}
+.register button{
+  width: 100%;
+  background: rgb(234, 85, 85);
+  color: white;
+  border: none;
+  padding: 10px;
+  margin-top: 40px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.login-link{
+  text-align: center;
+  margin-top: 15px;
+}
+.login-link a{
+  color:#3a8fea;
+  text-decoration:none;
+}
+@media (min-width: 1400px) and (max-width: 1540px) {
+     .register {
+        width: 650px;       
+        margin: 100px auto; 
+        padding: 50px;      
+    }
+     .title {
+        font-size: 32px;
+    }
+     .label {
+        font-size: 22px;
+    }
+     .text {
+        height: 45px;
+        font-size: 17px;
+    }
+     .register button {
+        padding: 12px;
+        font-size: 17px;
+    }
+}
+@media (min-width: 768px) and (max-width: 850px) {
+     .register {
+        width: 90%;         
+        margin: 60px auto;
+        padding: 30px;
+    }
+     .title {
+        font-size: 24px;
+    }
+     .label {
+        font-size: 18px;
+    }
+     .text {
+        height: 35px;
+        font-size: 15px;
+    }
+     .register button {
+        padding: 8px;
+        font-size: 15px;
+    }
+}

@@ -1,4 +1,4 @@
-# flea-market-app
+# frima-market-app
 
 # 環境構築
 dockerビルド
@@ -21,4 +21,5 @@ laravel環境構築
 ・nginx 1.21.1
 
 ## ER図
-・![ER図]　(src/public/img/ERD.png)
+src配下に記載
+![alt text](END.png)
